@@ -21,12 +21,11 @@ function App() {
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
-          <div>
-            <Route exact path="/" component={Fib} />
-            <Route path="/otherpage" component={OtherPage} />
-          </div>
         </header>
-
+        <div>
+          <Route exact path="/" component={Fib} />
+          <Route path="/otherpage" component={OtherPage} />
+        </div>
       </div>
     </Router>
   );

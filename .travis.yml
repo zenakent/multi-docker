@@ -6,7 +6,7 @@ before_install:
   - docker build -t zenakent/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true zenakent/react-test npm test 
+  - docker run -e CI=true zenakent/react-test npm test -- --coverage
 
 language: generic
 
